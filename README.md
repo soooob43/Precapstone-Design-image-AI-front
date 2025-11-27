@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Precapstone – AI 이미지 생성 & 메시지 발송 프론트엔드  
+프롬프트 기반 AI 이미지 생성, 이미지 데이터 관리, 메시지 발송 기능을 제공하는 단독 프론트엔드 프로젝트  
+(다우기술 과제)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 목차 (Table of Contents)
+- [🇰🇷 프로젝트 소개](#🇰🇷-프로젝트-소개)
+- [주요 기능](#주요-기능)
+- [기술 스택](#기술-스택)
+- [내 역할](#내-역할)
+- [프로젝트 구조](#프로젝트-구조)
+- [시작하기](#시작하기)
+- [회고](#회고)
+- [🇺🇸 Project Overview](#🇺🇸-project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [My Contribution](#my-contribution)
+- [Getting Started](#getting-started)
+- [Directory Structure](#directory-structure)
+- [Reflection](#reflection)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🇰🇷 프로젝트 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+본 프로젝트는 학기 중, 다우기술의 과제를 받고 개발한 AI 이미지 생성 및 메시지 발송 서비스의 프론트엔드 구현 프로젝트입니다.  
+사용자가 입력한 프롬프트를 기반으로 AI 이미지를 생성하고, 생성된 이미지를 관리·저장하며, 메시지 작성 UI를 통해 메시지 발송 API와 연동하여 발송할 수 있는 기능을 제공합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+전체 UI/UX 구성, 이미지 생성 화면, 메시지 발송 페이지 및 API 연동까지 모든 프론트엔드 개발을 단독으로 수행했습니다.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 주요 기능
 
-### `npm run build`
+- 프롬프트 기반 AI 이미지 생성 기능
+- 생성된 이미지 목록 조회 및 미리보기
+- 이미지 데이터 관리 (저장, 선택, 삭제)
+- 메시지 작성/미리보기 UI
+- 메시지 발송 API 연동
+- 전체 메인 페이지·서브 페이지 UI/UX 구성
+- React 기반 SPA 환경 구성
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 기술 스택
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React (Create React App)
+- JavaScript  
+- CSS / Styled Components  
+- REST API 통신  
+- Local state management (useState, useEffect 등)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 내 역할
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 프로젝트 초기 세팅(CRA), 구조 설계, 개발 전반 담당
+- 프롬프트 입력 기반 AI 이미지 생성 화면 구현
+- 생성된 이미지 데이터의 저장/관리/렌더링 기능 구현
+- 메시지 작성 UI/상태 흐름 설계 및 메시지 발송 API 연동
+- 메인 페이지 및 이미지 출력 페이지 전체 UI 구성
+- 사용자 경험을 고려한 SPA 페이지 전환 및 구성 정리
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🇺🇸 Project Overview
 
-## Learn More
+This project is the frontend implementation of an AI-based image generation and messaging service, developed in collaboration with DAOU Technology.
+It enables users to generate AI images from text prompts, manage and preview generated image data, compose messages, and send them using a messaging API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All frontend development — UI, page structure, image workflow, messaging UI, and API integration — was fully implemented by me.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Key Features
+- Prompt-based AI image generation interface
+- Generated image storage, retrieval, and preview
+- Message composition and preview UI
+- Messaging API integration
+- Full UI/UX design and page structure
+- React SPA with client-side state management
 
-### Code Splitting
+Tech Stack
+React (Create React App)
+JavaScript
+CSS / Styled Components
+REST API communication
+Client-side state management (useState, useEffect)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+My Contribution
+Set up the project using Create React App and designed the full project structure
+Implemented AI image generation UI and prompt handling workflow
+Built image data management features (save, view, delete, render)
+Developed message composition UI and integrated the messaging API
+Designed the main page and all user interface flows
+Implemented SPA routing and state flow
+Designed API request/response logic and error handling
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Getting Started
+git clone https://github.com/soooob43/Precapstone-Design-image-AI-front.git
+npm install
+npm start
